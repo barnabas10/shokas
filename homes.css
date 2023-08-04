@@ -1,0 +1,274 @@
+body{
+  font-family:sans-serif;
+  /* background-image: url(./shokas\ background.png); */
+  background-color: transparent;
+}
+header {
+
+  /* padding: 0 100px 0 15px; */
+  /* align-items: center; */
+  background-color:  white;
+  /* box-shadow: 0px 8px 16px 0px rgba(10, 10, 10, 0.2); */
+/* position: fixed;
+width: 100%;
+top: 0; */
+
+
+}
+ .log1 span{
+  font-size: 20px;
+ }
+.log1 {
+  display: flex;
+  /* flex: 0.3; */
+  flex-direction: row;
+  justify-content: center
+}
+.img1 {
+  max-width: 20%;
+  height: 50px;
+}
+.nav {
+  display: flex;
+  /* flex: 0.7; */
+  justify-content: space-around;
+}
+.nav li a:hover{
+  /* background-color: black; */
+  font-size: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: all .5s;
+}
+.nav a{
+  font-size: 11px;
+  border-right: solid black;
+  border-left: solid black;
+  border-width: 1px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+
+.nav li {
+  list-style: none;
+}
+.nav li a {
+  text-decoration: none;
+  color: #ff9b06;
+}
+.dashboard {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+
+}
+.img2 {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.songs {
+  text-align: center;
+  /* background-color: black; */
+  /* border-radius: 200px; */
+  color: orange;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font: 1em sans-serif;
+  font-size: 50px;
+}
+
+.artist {
+  text-align: center;
+  /* background-color: black; */
+  /* border-radius: 200px; */
+  color: orange;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font: 1em sans-serif;
+  font-size: 50px;
+}
+
+.videos {
+  text-align: center;
+  /* background-color: black; */
+  /* border-radius: 200px; */
+  color: orange;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font: 1em sans-serif;
+  font-size: 50px;
+}
+.log2 {
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+}
+.log2 div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.log2 img {
+  height: 200px;
+  padding: 10px;
+  width: 250px;
+display: flex;
+justify-content: space-between;}
+  
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  text-decoration: none;
+  color: orange;
+  text-transform: capitalize;
+}
+.btn:hover{
+  background-color: orange;
+  color: #fff;
+  border: none;
+  transform: scale(1.1);
+  transition: all .4s;
+}
+
+.log3 {
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+}
+.log3 img {
+  height: 200px;
+  padding: 30px;
+  width: 200px;
+}
+
+.last {
+  display: flex;
+  flex-direction: row;
+}
+.last img {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+}
+
+.lob1 {
+  color: orange;
+}
+.lob2 {
+  color: black;
+}
+.lob3 {
+  color: orange;
+}
+.lob4 {
+  color: black;
+}
+.lob5 {
+  color: orange;
+}
+.lob6 {
+  color: black;
+}
+h3 span{
+  font-size: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 60px;
+  justify-content: space-around;
+  padding: 20 0;
+
+}
+.footer ul li{
+  list-style: none;
+  color: rgb(124, 122, 122);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+footer h6{
+  color: rgb(124, 122, 122);
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: -5px;
+  font-family:  sans-serif;
+}
+.img {
+  width: 50px;
+  height: 30px;
+}
+.white{
+  color: #fff;
+}
+.orange{
+  color: orange;
+}
+.footer div{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+section{
+  background-color: white;
+}
+
+
+    .gallery-scroll {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  
+}
+
+.gallery-item {
+  padding: .5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #333;
+  color: #d9d9d9;
+  scroll-snap-align: center;
+  max-width: 70%;
+  height: auto;
+
+}
+@media screen and (min-width: 800px) {
+  .gallery-scroll {
+    /* flex-wrap: wrap; */
+    padding: 1rem 0;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 300px;
+ 
+  }
+
+  .gallery-item {
+    scroll-snap-align: start;
+    
+  }
+  
+}
+.gallery-img{
+  max-width: 90%;
+  height: 140px;
+}
+
+
